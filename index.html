@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工具格 TOOLGRID — 拿来就用</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 顶部跑马灯 -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<!-- 头部 -->
+<header class="masthead">
+  <div class="logo-block">
+    <span class="logo-mark">TG</span>
+    <div class="logo-text">
+      <h1>工具格<span class="dot">.</span>TOOLGRID</h1>
+      <p class="tagline">拿来就用的 12 件小工具</p>
+    </div>
+  </div>
+  <nav class="quick-nav">
+    <span class="nav-chip">纯本地运行</span>
+    <span class="nav-chip nav-chip--alt">不上传 · 无广告</span>
+  </nav>
+</header>
+
+<!-- 工具网格 -->
+<main class="grid" id="toolGrid"></main>
+
+<!-- 工具工作台浮层 -->
+<div class="workbench" id="workbench" hidden>
+  <div class="workbench-card">
+    <div class="workbench-head">
+      <div class="wb-title">
+        <span class="wb-icon" id="wbIcon"></span>
+        <div>
+          <h2 id="wbName">工具名</h2>
+          <span class="wb-tag" id="wbTag">标签</span>
+        </div>
+      </div>
+      <button class="wb-close" id="wbClose" title="关闭">✕</button>
+    </div>
+    <div class="workbench-body" id="wbBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
